@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,18 @@
     <link rel="stylesheet" href="main-css.css">
     <link rel="icon" href="./image/iconweb.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css" rel="stylesheet">
+
 </head>
+
 <body>
     <div class="container">
         <header>
             <a href="#" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true"></i>What???</a>
             <nav class="navbar">
                 <a href="#home">Home</a>
-                <a href="#product">product</a>
-                <a href="#about me">about me</a>
+                <a href="#product_item">product</a>
+                <a href="#about-me">about me</a>
             </nav>
             <div class="icon">
                 <div class="fa fa-bars" id="menu-btn"></div>
@@ -29,35 +32,67 @@
                 <label for="search-box" class="fa fa-search"></label>
             </form>
             <div class="shopping-cart">
-                <div class="box">
-                    <i class="fa fa-trash"></i>
-                    <img src="image/chair1.png" alt="" width="100px">
-                    <div class="content">
-                        <h3>Chair 1</h3>
-                        <span class="price">1 VND /</span>
-                        <span class="quantity">Qty: 999</span>
+                <div class="box-item">
+                    <div class="box">
+                        <i class="fa fa-trash"></i>
+                        <img src="image/chair1.png" alt="" width="100px">
+                        <div class="content">
+                            <h3>Chair 1</h3>
+                            <span class="price">1 VND /</span>
+                            <span class="quantity">Qty: 999</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-trash"></i>
+                        <img src="image/chair2.png" alt="" width="100px">
+                        <div class="content">
+                            <h3>Chair 1</h3>
+                            <span class="price">1 VND /</span>
+                            <span class="quantity">Qty: 999</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-trash"></i>
+                        <img src="image/chair3.png" alt="" width="100px">
+                        <div class="content">
+                            <h3>Chair 1</h3>
+                            <span class="price">1 VND /</span>
+                            <span class="quantity">Qty: 999</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-trash"></i>
+                        <img src="image/chair1.png" alt="" width="100px">
+                        <div class="content">
+                            <h3>Chair 1</h3>
+                            <span class="price">1 VND /</span>
+                            <span class="quantity">Qty: 999</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-trash"></i>
+                        <img src="image/chair2.png" alt="" width="100px">
+                        <div class="content">
+                            <h3>Chair 1</h3>
+                            <span class="price">1 VND /</span>
+                            <span class="quantity">Qty: 999</span>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-trash"></i>
+                        <img src="image/chair3.png" alt="" width="100px">
+                        <div class="content">
+                            <h3>Chair 1</h3>
+                            <span class="price">1 VND /</span>
+                            <span class="quantity">Qty: 999</span>
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <i class="fa fa-trash"></i>
-                    <img src="image/chair2.png" alt="" width="100px">
-                    <div class="content">
-                        <h3>Chair 1</h3>
-                        <span class="price">1 VND /</span>
-                        <span class="quantity">Qty: 999</span>
-                    </div>
+                <div class="total-price">
+                    <div class="total">Total: 3VND</div>
+                    <a href="#" class="btn">Check Out</a>
                 </div>
-                <div class="box">
-                    <i class="fa fa-trash"></i>
-                    <img src="image/chair3.png" alt="" width="100px">
-                    <div class="content">
-                        <h3>Chair 1</h3>
-                        <span class="price">1 VND /</span>
-                        <span class="quantity">Qty: 999</span>
-                    </div>
-                </div>
-                <div class="total">Total: 3VND</div>
-                <a href="#" class="btn">Check Out</a>
+
             </div>
             <form action="#" class="login-form">
                 <h3>login now</h3>
@@ -72,38 +107,38 @@
             <div class="content">
                 <h3>Modern and <span>Smart</span> for you</h3>
                 <p>This website don't have anything real</p>
-                <a href="#" class="btn">Shop now</a>
+                <a href="#shop" class="btn">Shop now</a>
             </div>
         </section>
         <section class="product">
-            <h1 class="heading"> Watch <span>this</span> </h1>
+            <h1 class="heading" id="shop"> Watch <span>this</span> </h1>
             <div class="box-container">
                 <div class="box">
                     <img src="../image/phone.jpg" alt="">
                     <h3>Phone</h3>
                     <p>This is a phone =)))</p>
-                    <a href="#" class="btn">See more</a>
+                    <a href="#phone" class="btn">See more</a>
                 </div>
                 <div class="box">
                     <img src="../image/drone.png" alt="">
                     <h3>Drone</h3>
                     <p>This is a drone =)))</p>
-                    <a href="#" class="btn">See more</a>
+                    <a href="#drone" class="btn">See more</a>
                 </div>
                 <div class="box">
                     <img src="../image/laptop.jpg" alt="">
                     <h3>Laptop</h3>
                     <p>This is a laptop =)))</p>
-                    <a href="#" class="btn">See more</a>
+                    <a href="#laptop" class="btn">See more</a>
                 </div>
             </div>
         </section>
         <section class="product_item" id="product_item">
             <h1 class="heading">More and <span>More</span></h1>
             <h1 class="heading"><span>Phone</span></h1>
-            <div class="product-slider">
-                <div class="wrapper">
-                    <div class="box">
+            <div class="product-slider swiper">
+                <div class="wrapper swiper-wrapper" id="phone">
+                    <div class="box swiper-slide">
                         <img src="image/1.png" alt="">
                         <h1>IPhone 16</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -116,7 +151,7 @@
                         </div>
                         <a href="" class="btn">add to cart</a>
                     </div>
-                    <div class="box">
+                    <div class="box swiper-slide">
                         <img src="image/2.png" alt="">
                         <h1>IPhone 16 XML</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -129,7 +164,7 @@
                         </div>
                         <a href="" class="btn">add to cart</a>
                     </div>
-                    <div class="box">
+                    <div class="box swiper-slide">
                         <img src="image/3.png" alt="">
                         <h1>IPhone 16 FXML</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -142,7 +177,59 @@
                         </div>
                         <a href="" class="btn">add to cart</a>
                     </div>
-                    <div class="box">
+                    <div class="box swiper-slide">
+                        <img src="image/4.png" alt="">
+                        <h1>IPhone 16 Unity</h1>
+                        <div class="price">12 VND / 15 VND</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="image/1.png" alt="">
+                        <h1>IPhone 16</h1>
+                        <div class="price">12 VND / 15 VND</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="image/2.png" alt="">
+                        <h1>IPhone 16 XML</h1>
+                        <div class="price">12 VND / 15 VND</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="image/3.png" alt="">
+                        <h1>IPhone 16 FXML</h1>
+                        <div class="price">12 VND / 15 VND</div>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <a href="" class="btn">add to cart</a>
+                    </div>
+                    <div class="box swiper-slide">
                         <img src="image/4.png" alt="">
                         <h1>IPhone 16 Unity</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -157,11 +244,11 @@
                     </div>
                 </div>
             </div>
-
+            <div class="btn-see"><a href="" class="btn">See more</a></div>
             <h1 class="heading"><span>Drone</span></h1>
-            <div class="product-slider">
-                <div class="wrapper-drone">
-                    <div class="box-drone">
+            <div class="product-slider swiper">
+                <div class="wrapper-drone swiper-wrapper" id="drone">
+                    <div class="box-drone swiper-slide">
                         <img src="image/FPV-Apex-VR70-1.jpg" alt="">
                         <h1>FXML</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -174,7 +261,7 @@
                         </div>
                         <a href="" class="btn-drone">add to cart</a>
                     </div>
-                    <div class="box-drone">
+                    <div class="box-drone swiper-slide">
                         <img src="image/FPV-Apex-VR70-1.jpg" alt="">
                         <h1>XML</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -187,7 +274,7 @@
                         </div>
                         <a href="" class="btn-drone">add to cart</a>
                     </div>
-                    <div class="box-drone">
+                    <div class="box-drone swiper-slide">
                         <img src="image/FPV-Apex-VR70-1.jpg" alt="">
                         <h1>HTML</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -200,7 +287,7 @@
                         </div>
                         <a href="" class="btn-drone">add to cart</a>
                     </div>
-                    <div class="box-drone">
+                    <div class="box-drone swiper-slide">
                         <img src="image/FPV-Apex-VR70-1.jpg" alt="">
                         <h1>Ruby</h1>
                         <div class="price">12 VND / 15 VND</div>
@@ -215,9 +302,127 @@
                     </div>
                 </div>
             </div>
-
+            <div class="btn-see"><a href="" class="btn">See more</a></div>
         </section>
-    </div> 
+
+        <section class="review" id="review">
+            <h1 class="heading">Customer's <span>Review</span></h1>
+            <div class="review-slider swiper">
+                <div class="wrapper swiper-wrapper">
+                    <div class="box swiper-slide">
+                        <img src="../image/iconweb.jpeg" alt="">
+                        <p>hehe1</p>
+                        <h3>HEHE</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="../image/iconweb.jpeg" alt="">
+                        <p>hehe2</p>
+                        <h3>HEHE</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="../image/iconweb.jpeg" alt="">
+                        <p>hehe3</p>
+                        <h3>HEHE</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="../image/iconweb.jpeg" alt="">
+                        <p>hehe1</p>
+                        <h3>HEHE</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="../image/iconweb.jpeg" alt="">
+                        <p>hehe2</p>
+                        <h3>HEHE</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="box swiper-slide">
+                        <img src="../image/iconweb.jpeg" alt="">
+                        <p>hehe3</p>
+                        <h3>HEHE</h3>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="footer" id="about-me">
+            <div class="box-container">
+                <div class="box">
+                    <h3>What??? <i class="fa fa-shopping-basket"></i></h3>
+                    <p>nothing here</p>
+                    <div class="share">
+                        <a href="#" class="fa fa-facebook-f"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Info</h3>
+                    <a href="#" class="links"><i class="fa fa-phone"></i> +84112345678</a>
+                    <a href="#" class="links"><i class="fa fa-envelope"></i> 5zjDZ@example.com</a>
+                    <a href="#" class="links"><i class="fa fa-map-marker"></i> Ha Noi, Viet Nam</a>
+                </div>
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="#" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+                    <a href="#product_item" class="links"><i class="fa fa-arrow-right"></i> Products</a>
+                    <a href="#about-me" class="links"><i class="fa fa-arrow-right"></i> About</a>
+                    <a href="#" class="links"><i class="fa fa-arrow-right"></i> Contact</a>
+                </div>
+                <div class="box">
+                    <h3>hehe</h3>
+                    <p>heheh</p>
+                    <input type="email" placeholder="Enter your email" class="email">
+                    <input type="submit" value="Subscribe" class="btn">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
     <script src="main-js.js"></script>
 </body>
+
 </html>

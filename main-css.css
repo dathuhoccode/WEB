@@ -67,6 +67,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -154,6 +155,7 @@ header .search-form label:hover{
 
 }
 header .shopping-cart{
+    height: 50rem;
     border: 1px solid;
     position: absolute;
     top: 110%;
@@ -163,6 +165,14 @@ header .shopping-cart{
     box-shadow: var(--box-shadow);
     width: 35rem;
     background: #fff;
+}
+header .shopping-cart .box-item{
+    height: 35.5rem;
+    width: 35rem;
+    overflow: auto;
+}
+header .shopping-cart .box-item::-webkit-scrollbar{
+    width: 1rem;
 }
 header .shopping-cart .box{
     border: 0px solid blue;
@@ -202,6 +212,9 @@ header .shopping-cart .box .content span{
 }
 header .shopping-cart .box .content .quantity{
     padding-left: 1rem;
+}
+header .shopping-cart .total-price{
+    display: grid;
 }
 header .shopping-cart .total{
     font-size: 2.5rem;
@@ -328,7 +341,7 @@ header .login-form p a:hover{
     padding-bottom: 1rem 0;
 }
 .product_item{
-    border: 1px solid;
+    border: 0px solid;
 }
 .product_item .product-slider{
     border: 0px solid;
@@ -370,14 +383,24 @@ cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointe
     font-size: 1.7rem;
     color: orange;
 }
-.product-slider .wrapper{
+/* .product-slider .wrapper{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-}
-.product-slider .wrapper .box{
+} */
+/* .product-slider .wrapper .box{
     margin:  0 4rem 0 4rem;
+} */
+.btn-see .btn{
+    text-align: center;
+    display: inline-block;
+    margin-left: 55rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointer.png)   , pointer !important
 }
-
 .product_item .product-slider .box-drone{
     border: 0px solid red;
     padding: 1rem 0;
@@ -411,13 +434,13 @@ cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointe
     font-size: 1.7rem;
     color: orange;
 }
-.product-slider .wrapper-drone{
+/* .product-slider .wrapper-drone{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-}
-.product-slider .wrapper-drone .box-drone{
+} */
+/* .product-slider .wrapper-drone .box-drone{
     margin:  0 4rem 0 4rem;
-}
+} */
 .btn-drone{
     border: .2rem solid var(--black);
     margin-top: 1rem;
@@ -434,47 +457,119 @@ cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointe
     color: #fff;
     cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointer.png)   , pointer !important
 }
-/* hover */
 
-/* .product_item .product-slider .box-drone img:hover{
-    height: 20rem;
+.review .review-slider{
+    border: 0px solid;
+    padding: 1rem;
+} 
+
+.review .review-slider .box{
+    width: 40rem;
+    border: 0px solid red;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
 }
-.product_item .product-slider .box-drone h1:hover{
-    font-size: 2.5rem;
+.review .review-slider .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);
+    cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointer.png)   , pointer !important
+}
+.review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.review .review-slider .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
     color: var(--light-color);
+    font-size: 1.5rem;
 }
-.product_item .product-slider .box-drone .price:hover{
+.review .review-slider .box h3{
+    padding-bottom: .5rem;
+    color: var(--black);
+    font-size: 2.2rem;
+}
+.review .review-slider .box .stars i{
+    color: orange;
+    font-size: 1.7rem;
+}
+
+.footer{
+    background: #fff;
+}
+.footer .box-container{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 i{
+    color: var(--green);
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+.footer .box-container .box a:hover{
+    color: var(--green);
+    cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointer.png)   , pointer !important;
+}
+.footer .box-container .box a i{
+    color: var(--green);
+    padding-right: .5rem;
+}
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+.footer .box-container .box .share a{
+    border: 0px solid;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
     font-size: 2rem;
     color: var(--black);
-    padding: .5rem 0;
+    margin-left: .2rem;
 }
-.product_item .product-slider .box-drone .stars:hover{
-    font-size: 1.7rem;
-    color: orange;
+.footer .box-container .box .links{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    display: block;
+    color: var(--light-color);
 }
-.product-slider .wrapper-drone:hover{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+.footer .box-container .box .links i{
+    color: var(--green);
+    padding-right: .5rem;
 }
-.product-slider .wrapper-drone .box-drone:hover{
-    margin:  0 4rem 0 4rem;
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
 }
-.btn-drone:hover{
-    border: .2rem solid var(--black);
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .8rem 3rem;
-    font-size: 1.8rem;
+.footer .box-container .box .email{
+    margin: .7rem 0;
+    padding: 1rem;
     border-radius: .5rem;
-    color: var(--black);
-    cursor: pointer;
-    background: none
+    background: #eee;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    text-transform: none;
+    width: 100%;
 }
-/* .btn:hover{
-    background: var(--green);
-    color: #fff;
-    cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointer.png)   , pointer !important
-} */ 
 @media (max-width: 911px){
     html{
         font-size: 55%;
@@ -528,5 +623,8 @@ cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Infinity_Gauntlet_Pointe
     }
     .product-slider .wrapper .box{
         margin:  2rem 2rem 2rem 2rem;
+    }
+    .footer{
+        text-align: center;
     }
 }
