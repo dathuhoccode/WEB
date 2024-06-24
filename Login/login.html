@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/iconweb.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css" rel="stylesheet">
+    <title>Sign up and Sign in</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper sign-in">
+            <form action="" id="login">
+                <h2>Forget</h2>
+                <div class="input-group">
+                    <input type="text" class ="username" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="password" id="passwordfirst" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="password" id="passwordafter" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox" class="checkbox" id="checkbox"> Remember me</label>
+                </div>
+                <button type="submit">Try</button>
+                <div class="signup">
+                    <p>Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-wrapper sign-up">
+            <form action="" id="signup">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" id="username1" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password1" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox" id="checkbox1"> Ok, I agree to the terms and conditions</label>
+                </div>
+                <button type="submit">Sign up</button>
+                <div class="signup">
+                    <p>Already have an account? <a href="#" class="signin-link">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
